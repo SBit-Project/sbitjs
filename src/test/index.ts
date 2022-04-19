@@ -10,7 +10,7 @@ export const repoData = require("../../solar.development.json")
 
 export async function generateBlock(n = 1) {
   // generate to a throwaway address
-  return rpc.rawCall("generatetoaddress", [n, "qUdPrkrdbmWD5m21mKEr5euZpFDsQHWzsG"])
+  return rpc.rawCall("generatetoaddress", [n, "sUdPrkrdbmWD5m21mKEr5euZpFDsQHWzsG"])
 }
 
 export async function assertThrow(
