@@ -2,7 +2,7 @@ pragma solidity ^0.5.8;
 
 import "./LogOfDependantContractChild.sol";
 
-// https://github.com/SBit-Project/sbitjs/issues/4
+// https://github.com/SBit-Project-Project/sbitjs/issues/4
 contract LogOfDependantContract {
   LogOfDependantContractChild testContract;
 
