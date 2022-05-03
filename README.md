@@ -11,10 +11,10 @@ npm install sbitjs
 This is a sample code snippet that transfer ERC20 tokens:
 
 ```js
-import { SBitRPC } from "sbitjs"
+import { SbitRPC } from "sbitjs"
 
 const repoData = require("./solar.json")
-const sbit = new SBit("http://sbit:test@localhost:22002", repoData)
+const sbit = new Sbit("http://sbit:test@localhost:22002", repoData)
 
 const myToken = sbit.contract(
   "zeppelin-solidity/contracts/token/CappedToken.sol",
