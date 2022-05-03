@@ -1,6 +1,6 @@
 import { IContractInfo, Contract } from "./Contract";
 import { IABIMethod } from "./ethjs-abi";
-import { SBitRPC } from "./SBitRPC";
+import { SbitRPC } from "./SbitRPC";
 import { ContractLogDecoder } from "./abi";
 import { EventListener } from "./EventListener";
 export interface IABIDefs {
@@ -43,7 +43,7 @@ export declare class ContractsRepo {
      * A logDecoder that knows about events defined in all known contracts.
      */
     logDecoder: ContractLogDecoder;
-    constructor(rpc: SBitRPC, repoData: IContractsRepoData);
+    constructor(rpc: SbitRPC, repoData: IContractsRepoData);
     contract(name: string, info?: IContractInfo): Contract;
     eventListener(): EventListener;
     /**
