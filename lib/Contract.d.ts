@@ -2,7 +2,7 @@ import { IABIMethod } from "./ethjs-abi";
 import { EventEmitter } from "eventemitter3";
 import { ContractLogDecoder } from "./abi";
 import { IDecodedSolidityEvent, ITransactionLog } from "./index";
-import { IRPCCallContractResult, IRPCGetTransactionReceiptBase, IRPCGetTransactionResult, IRPCSendToContractResult, SBitRPC, IRPCWaitForLogsRequest, ILogEntry } from "./SBitRPC";
+import { IRPCCallContractResult, IRPCGetTransactionReceiptBase, IRPCGetTransactionResult, IRPCSendToContractResult, SbitRPC, IRPCWaitForLogsRequest, ILogEntry } from "./SbitRPC";
 export interface IContractSendTx {
     method: string;
     txid: string;
@@ -85,7 +85,7 @@ export interface IContractSendRequestOptions {
      */
     gasLimit?: number;
     /**
-     * SBit price per gas unit, default: 0.00000001, min:0.00000001
+     * Sbit price per gas unit, default: 0.00000001, min:0.00000001
      */
     gasPrice?: number | string;
     /**
@@ -182,7 +182,7 @@ export declare class Contract {
      *      address, owner address, and ABI definition for methods and types.
      * @param opts - init options
      */
-    constructor(rpc: SBitRPC, info: IContractInfo, opts?: IContractInitOptions);
+    constructor(rpc: SbitRPC, info: IContractInfo, opts?: IContractInitOptions);
     encodeParams(method: string, args?: any[]): string;
     /**
      * Call a contract method using ABI encoding, and return the RPC result as is.
