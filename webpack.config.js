@@ -20,7 +20,7 @@ module.exports = {
   output: {
     filename: "sbit.js",
     path: path.resolve(__dirname, "dist"),
-    library: "SBit",
+    library: "Sbit",
     libraryTarget: "umd"
   }
 };
