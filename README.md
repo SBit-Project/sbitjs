@@ -1,7 +1,5 @@
 The SBIT JavaScript library for Smart Contract development.
 
-[Documentation](https://sbit-project.github.io/sbitjs-doc)
-
 # Install
 
 ```
