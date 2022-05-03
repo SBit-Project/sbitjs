@@ -1,10 +1,10 @@
 import { assert } from "chai"
 
-import { SBitRPC } from "../SBitRPC"
+import { SbitRPC } from "../SbitRPC"
 
 export const rpcURL = process.env.SBIT_RPC || "http://sbit:test@localhost:22002"
 
-export const rpc = new SBitRPC(rpcURL)
+export const rpc = new SbitRPC(rpcURL)
 
 export const repoData = require("../../solar.development.json")
 

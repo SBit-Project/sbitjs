@@ -4,8 +4,8 @@ import {
   IRPCGetTransactionReceiptResult,
   IRPCGetTransactionRequest,
   IRPCGetTransactionResult,
-  SBitRPC,
-} from "./SBitRPC"
+  SbitRPC,
+} from "./SbitRPC"
 import { sleep } from "./sleep"
 
 export type TxReceiptConfirmationHandler = (
@@ -23,7 +23,7 @@ export interface ITxReceiptConfirmOptions {
 export class TxReceiptPromise {
   private _emitter: EventEmitter
 
-  constructor(private _rpc: SBitRPC, public txid: string) {
+  constructor(private _rpc: SbitRPC, public txid: string) {
     this._emitter = new EventEmitter()
   }
 

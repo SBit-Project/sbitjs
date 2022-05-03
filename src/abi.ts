@@ -9,7 +9,7 @@ const {
 
 configureABI({ noHexStringPrefix: true })
 
-import { ITransactionLog } from "./SBitRPC"
+import { ITransactionLog } from "./SbitRPC"
 
 export function encodeInputs(method: IABIMethod, args: any[] = []): string {
   const calldata = encodeMethod(method, args)

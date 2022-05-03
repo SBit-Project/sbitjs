@@ -22,10 +22,10 @@ import {
   IRPCGetTransactionResult,
   IRPCSendToContractResult,
   IRPCWaitForLogsResult,
-  SBitRPC,
+  SbitRPC,
   IRPCWaitForLogsRequest,
   ILogEntry,
-} from "./SBitRPC"
+} from "./SbitRPC"
 
 import {
   TxReceiptConfirmationHandler,
@@ -135,7 +135,7 @@ export interface IContractSendRequestOptions {
   gasLimit?: number
 
   /**
-   * SBit price per gas unit, default: 0.00000001, min:0.00000001
+   * Sbit price per gas unit, default: 0.00000001, min:0.00000001
    */
   gasPrice?: number | string
 
@@ -245,7 +245,7 @@ export class Contract {
    * @param opts - init options
    */
   constructor(
-    private rpc: SBitRPC,
+    private rpc: SbitRPC,
     public info: IContractInfo,
     opts: IContractInitOptions = {},
   ) {
