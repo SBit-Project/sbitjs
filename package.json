@@ -26,7 +26,7 @@
     "btoa": "^1.1.2",
     "debug": "^4.1.1",
     "eventemitter3": "^2.0.3",
-    "sbitjs-ethjs-abi": "^0.0.1",
+    "sbit-ethjs-abi": "^0.0.1",
     "url-parse": "^1.4.7"
   },
   "devDependencies": {
