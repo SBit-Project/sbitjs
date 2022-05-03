@@ -1,6 +1,6 @@
-const { Contract, SBitRPC } = require("sbitjs")
+const { Contract, SbitRPC } = require("sbitjs")
 
-const rpc = new SBitRPC("http://user:pass@localhost:22302")
+const rpc = new SbitRPC("http://user:pass@localhost:22302")
 
 async function main() {
   // Load the ABI and address of a deployed contract
